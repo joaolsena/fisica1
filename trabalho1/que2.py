@@ -4,11 +4,11 @@ from vpython import *
 scene = canvas(width=1200, height=1000, background=color.black)  # Fundo preto
 
 # Definindo parâmetros do sistema
-m = 10.0  # Massa do bloco (kg)
+m = 2  # Massa do bloco (kg)
 g = 9.8  # Aceleração gravitacional (m/s²)
 mu_s = 0.5  # Coeficiente de atrito estático
-mu_k = 0.35  # Coeficiente de atrito cinético
-f_aplicada = 100  # Força aplicada (N)
+mu_k = 0.3  # Coeficiente de atrito cinético
+f_aplicada = 15  # Força aplicada (N)
 
 # Criar o plano horizontal (verde)
 plano = box(pos=vector(0, 0, 0), size=vector(20, 0.2, 5), color=color.yellow)
