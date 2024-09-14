@@ -11,7 +11,7 @@ g = 9.8  # Aceleração gravitacional (m/s²)
 atrito_pneu1 = 0.4  # Atrito do pneu 1
 atrito_pneu2 = 0.2  # Atrito pneu 2
 raio = 50  # Raio da curva em metros
-velocidade_carro = 50  # Velocidade do carro (km/h)
+velocidade_carro = 40  # Velocidade do carro (km/h)
 velocidade_carro = velocidade_carro / 3.6  # Converte para m/s
 
 # Criar o plano horizontal (verde)
@@ -73,6 +73,7 @@ def mover_bloco():
             rate(50)  # Controla a taxa de atualização
             block.rotate(angle=radians(10), axis=vector(1, 0, 0))  # Faz o carro "girar" no ar
             block.pos.y += 0.1  # O carro sobe levemente ao capotar
+            block.color=color.red
 
 # Iniciar a simulação
 mover_bloco()
