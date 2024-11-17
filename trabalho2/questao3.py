@@ -21,4 +21,4 @@ x = v0*math.cos(a)*t
 
 
 
-print(f"Velocidade inicial do salto: {x:.2f} m")
+print(f"distancia horizontal : {x:.2f} m")
